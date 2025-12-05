@@ -50,16 +50,18 @@ A API expõe recursos para a gestão completa do ciclo de vida das empresas lici
 1. **Clone o repositório:**
    ```bash
    git clone [https://github.com/Welberrr/bidding-system-api.git](https://github.com/Welberrr/bidding-system-api.git)
-Configure o Banco de Dados:
+2. Configure o Banco de Dados:
 
 O projeto utiliza MySQL por padrão. Certifique-se de ter um banco criado ou altere o arquivo application.properties para usar H2 em memória para testes rápidos.
 
-Execute a aplicação:
+3. Execute a aplicação:
 
 Bash
 
 cd bidding-system-api
+
 ./mvnw spring-boot:run
+
 Teste a API:
 
 Acesse via Postman ou Insomnia em: http://localhost:8080/empresas
