@@ -63,12 +63,3 @@ cd bidding-system-api
 Teste a API:
 
 Acesse via Postman ou Insomnia em: http://localhost:8080/empresas
-
-📂 Estrutura do Projeto
-Plaintext
-
-src/main/java/com/licitacao/
-├── controller/       # Camada de exposição da API (REST Controllers)
-├── model/            # Entidades JPA e regras de negócio
-├── repository/       # Camada de acesso a dados (Spring Data Repositories)
-└── LicitacaoApiApplication.java # Classe Main
