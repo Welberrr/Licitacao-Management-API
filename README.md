@@ -1,1 +1,52 @@
-*Código de uma API Rest para o sistema do Projeto integrador Faculdade*
+# 🏛️ Bidding System API (Gestão de Licitações)
+
+> API RESTful robusta desenvolvida para o gerenciamento de empresas e processos licitatórios (Public Procurement), focada na integridade dos dados e agilidade no cadastro de fornecedores.
+
+![Java Badge](https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot Badge](https://img.shields.io/badge/Spring_Boot-3.3-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![MySQL Badge](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+
+---
+
+## 💻 Sobre o Projeto
+
+Este projeto consiste no Back-End de um sistema de licitações públicas. Ele fornece os serviços necessários para o credenciamento de empresas participantes, gerenciando dados críticos como **Acervo Técnico**, **Capital Declarado** e **CNPJ**.
+
+A aplicação foi construída utilizando as versões mais recentes do ecossistema Java (Java 21 LTS e Spring Boot 3), seguindo os padrões de arquitetura REST.
+
+### 🛠️ Tech Stack & Ferramentas
+
+* **Linguagem:** Java 21 (Recursos modernos da linguagem)
+* **Framework:** Spring Boot 3.3.0
+* **Banco de Dados:** MySQL (Produção) / H2 Database (Memória/Dev)
+* **ORM:** Spring Data JPA / Hibernate
+* **Produtividade:** Lombok (Redução de boilerplate code)
+* **Build:** Maven
+
+---
+
+## ⚙️ Funcionalidades (Endpoints)
+
+A API expõe recursos para a gestão completa do ciclo de vida das empresas licitantes:
+
+| Método | Endpoint | Descrição |
+| :--- | :--- | :--- |
+| `GET` | `/empresas` | Lista todas as empresas cadastradas no certame. |
+| `POST` | `/empresas` | Cadastra uma nova empresa (Requer JSON no corpo). |
+| `PUT` | `/empresas/{id}` | Atualiza dados cadastrais (Acervo, Capital, E-mail). |
+| `DELETE`| `/empresas/{id}`| Remove uma empresa da base de dados. |
+
+---
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+* Java JDK 21 instalado
+* Maven instalado
+* MySQL (Opcional, pois o projeto está configurado para aceitar H2 em memória se necessário)
+
+### Passo a Passo
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/Welberrr/bidding-system-api.git](https://github.com/Welberrr/bidding-system-api.git)
